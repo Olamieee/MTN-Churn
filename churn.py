@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 model = joblib.load("xg_churn_model.pkl")
-label_encoders = joblib.load("label_encoders.pkl")
+label_encoders = joblib.load("label_encoder.pkl")
 scaler = joblib.load("scaler.pkl")
 
 FEATURE_NAMES = [
